@@ -167,7 +167,7 @@ def createService(id, name, user=" ", host="", typeService="ssh"):
             'id': f'{id}',
             'name': f'{name}',
             f'{id}': {
-                "cmd": f"gpg -d -q {path_passwd}.{id}.gpg > {tmp}; sshpass -f fifo ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no {user}@{host}"
+                "cmd": f"gpg -d -q {path_passwd}.{id}.gpg > {tmp}; sshpass -f {tmp} ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=quiet {user}@{host}"
             }
         }
     if typeService == "rdesktop":
