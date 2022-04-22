@@ -19,4 +19,20 @@ Finally, use it as follows:
 $ gpg -d -q .sshpassword.gpg > fifo; sshpass -f fifo ssh root@10.10.10.5
 ```
 
+### How to Install
+
+```shell
+git clone git@github.com:madyel/sshManager.git
+```
+
+```shell
+sudo cp sshManager/ssh_manager.py /usr/bin/ssh-manager
+```
+
+```shell
+rm -rf sshManager
+```
+
+### Result
+
 [![asciicast](https://asciinema.org/a/m7e4qtxMlYp5v5h7vJMWUMzFk.svg)](https://asciinema.org/a/m7e4qtxMlYp5v5h7vJMWUMzFk)
