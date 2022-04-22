@@ -21,6 +21,13 @@ $ gpg -d -q .sshpassword.gpg > fifo; sshpass -f fifo ssh root@10.10.10.5
 
 ### How to Install
 
+If you want you can change path of the password (DropBox, Pcloud, ...) and name of the file json.
+
+```python
+path_passwd = "~/password/"
+file_json = "data.json"
+```
+
 ```shell
 git clone git@github.com:madyel/sshManager.git
 ```
