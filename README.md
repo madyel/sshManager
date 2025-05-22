@@ -39,7 +39,3 @@ sudo cp sshManager/ssh_manager.py /usr/bin/ssh-manager
 ```shell
 rm -rf sshManager
 ```
-
-### Result
-
-[![asciicast](https://asciinema.org/a/m7e4qtxMlYp5v5h7vJMWUMzFk.svg)](https://asciinema.org/a/m7e4qtxMlYp5v5h7vJMWUMzFk)
