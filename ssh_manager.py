@@ -11,7 +11,7 @@ path_passwd = "~/.ssh-manager/"
 tmp = "~/.ssh-manager/fifo"
 
 
-file_json = "~/.ssh-manager/data.json"
+file_json = "data.json"
 
 init_json = {
     "Manager": []
@@ -218,6 +218,7 @@ def signal_handler(sig, frame):
 def bye():
     deleteTmp()
     print(f"{bcolors.FAIL}GoodBye!{bcolors.ENDC}")
+    sys.exit(0)
 
 def services_type(c):
     return {0: "ssh", 1: "rdesktop"}.get(c, "Invalid!")
